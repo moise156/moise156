@@ -1,0 +1,17 @@
+<div id="qrcode"></div>
+<script type="text/javascript">
+new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+var qrcode = new QRCode("test", {
+    text: "http://jindo.dev.naver.com/collie",
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+qrcode.clear(); // clear the code.
+qrcode.makeCode("http://naver.com"); // make another code.
+</script>
+<script type="text/javascript" src="assets/library/qrcode.min.js"></script>
+<script type="text/javascript" src="assets/library/qrcode.js"></script>
+<script type="text/javascript" src="assets/library/jquery.min.js"></script>
